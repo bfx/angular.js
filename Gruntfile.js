@@ -74,7 +74,7 @@ module.exports = function(grunt) {
         }
       },
       angular: {
-        dest: 'build/angular.js',
+        dest: 'build/angular-gustaff.js',
         src: util.wrap([files['angularSrc']], 'angular'),
         styles: {
           css: ['css/angular.css'],
@@ -122,7 +122,7 @@ module.exports = function(grunt) {
 
 
     min: {
-      angular: 'build/angular.js',
+      angular: 'build/angular-gustaff.js',
       cookies: 'build/angular-cookies.js',
       loader: 'build/angular-loader.js',
       resource: 'build/angular-resource.js',

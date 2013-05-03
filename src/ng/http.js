@@ -493,6 +493,11 @@ function $HttpProvider() {
         delete reqHeaders['Content-Type'];
       }
 
+      // WORKAROUND: waiting for stable angularjs 1.1.x
+      // Changed withCredentials default to true, to support authentication with $resource
+      config.withCredentials = true;
+      // END-WORKAROUND
+
       // send request
       promise = sendReq(config, reqData, reqHeaders);
 
